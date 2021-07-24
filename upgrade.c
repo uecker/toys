@@ -8,7 +8,7 @@
 #include <assert.h>
 #include <stdio.h>
 
-#if __GNUC__ >= 10
+#if __GNUC__ >= 5
 #define NESTED_CHAIN(p) 	\
 ({														\
 	struct { unsigned short mov1; unsigned int addr; unsigned short mov2; void* chain; unsigned int jmp; } 	\
